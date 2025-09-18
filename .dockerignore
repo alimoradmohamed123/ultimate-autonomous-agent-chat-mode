@@ -1,0 +1,64 @@
+# Docker ignore file for Ultimate Autonomous Agent Chat Mode
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Test files
+tests/
+*.test.ts
+*.spec.ts
+
+# Documentation development
+docs/api/
+README.md
+CHANGELOG.md
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.github/
+
+# Development tools
+.eslintrc.js
+.prettierrc
+jest.config.js
+tsconfig.json
+
+# Examples (optional - remove if you want to include them)
+examples/
