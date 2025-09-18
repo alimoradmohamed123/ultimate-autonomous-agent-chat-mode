@@ -1,0 +1,68 @@
+{
+  "name": "ultimate-autonomous-agent-chat-mode",
+  "version": "1.0.0",
+  "description": "Enterprise-grade GitHub Copilot chat mode with advanced protocols, tool orchestration, security validation, and adaptive learning for production-ready autonomous coding",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "prepare": "npm run build",
+    "docs:build": "typedoc src --out docs/api",
+    "validate": "npm run lint && npm run test && npm run build"
+  },
+  "keywords": [
+    "github-copilot",
+    "autonomous-agent",
+    "ai-coding",
+    "enterprise",
+    "typescript",
+    "chat-mode",
+    "tool-orchestration",
+    "security-validation",
+    "adaptive-learning"
+  ],
+  "author": "alimoradmohamed123",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alimoradmohamed123/ultimate-autonomous-agent-chat-mode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alimoradmohamed123/ultimate-autonomous-agent-chat-mode/issues"
+  },
+  "homepage": "https://github.com/alimoradmohamed123/ultimate-autonomous-agent-chat-mode#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.5.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typedoc": "^0.25.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "winston": "^3.8.0",
+    "zod": "^3.21.0"
+  }
+}
